@@ -50,3 +50,50 @@ let a = [1, 8, 7, 9, 1]
 const hasDuplicates = (arr) => arr.length !== new Set(arr).size;
 
 console.log(hasDuplicates(a))
+
+
+let multiplication = []
+
+for (let i = 0; i < numbers.length; i++) {
+  multiplication.push([]);
+  for (let j = 0; j < numbers2[i].length; j++) {
+    multiplication[i].push(numbers[i][j] * numbers2[i][j]);
+  }
+}
+
+console.log(numbers)
+console.log(numbers2)
+console.log(multiplication)
+
+function transpose(numbers) {
+  for (var i = 0; i < numbers.length; i++) {
+    for (var j = 0; j < i; j++) {
+      const swap = numbers[i][j];
+      numbers[i][j] = numbers[j][i];
+      numbers[j][i] = swap;
+    }
+  }
+}
+
+transpose(numbers)
+transpose(numbers2)
+console.log(numbers)
+console.log(numbers2)
+
+fetch('https://randomuser.me/api')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.text(); 
+  })
+  .then(data => {
+    console.log('Response:', data); 
+    const jsondata = JSON.parse(data);
+    console.log('DATA:',data)
+    const firstName = jsondata.results[0].name.first;
+    console.log('FIRSTNAME:',firstName)
+  })
+  .catch(error => {
+    console.error('Error fetching DATAM FROM API:', error);
+  });
