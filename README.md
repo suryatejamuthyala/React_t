@@ -26,3 +26,4 @@ Date :15/02/2021
 2.Write a js code to find a string or a number is palindorme or not 
 3.write a program to find the squares of the given array
 4.Write a program to find the given number is amstrong or not
+https://github.com/suryatejamuthyala/React_t/blob/main/js/arrays.js
