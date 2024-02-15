@@ -80,20 +80,21 @@ transpose(numbers2)
 console.log(numbers)
 console.log(numbers2)
 
-fetch('https://randomuser.me/api')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
+function isLeapYear(year) {
+  if (year % 4 === 0) {
+    if (year % 100 === 0) {
+      if (year % 400 === 0) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return true;
     }
-    return response.text(); 
-  })
-  .then(data => {
-    console.log('Response:', data); 
-    const jsondata = JSON.parse(data);
-    console.log('DATA:',data)
-    const firstName = jsondata.results[0].name.first;
-    console.log('FIRSTNAME:',firstName)
-  })
-  .catch(error => {
-    console.error('Error fetching DATAM FROM API:', error);
-  });
+  } else {
+    return false;
+  }
+}
+
+console.log(isLeapYear(2024));
+console.log(isLeapYear(2023));
