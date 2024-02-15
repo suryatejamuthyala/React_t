@@ -21,7 +21,7 @@
 //   });
 
 
-Date :15/02/2021
+Date :15/02/2024
 1.Write a js code to find leap year or not 
 2.Write a js code to find a string or a number is palindorme or not 
 3.write a program to find the squares of the given array
@@ -31,3 +31,5 @@ Date :15/02/2021
 **Note**:
 after you are done with the code part of each one can you give me the link of the file like the example below so that it will be easy to track (you can paste the link beside each question):
 https://github.com/suryatejamuthyala/React_t/blob/main/js/arrays.js**
+
+Date :16/02/2024
