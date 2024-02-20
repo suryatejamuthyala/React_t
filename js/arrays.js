@@ -98,3 +98,24 @@ function isLeapYear(year) {
 
 console.log(isLeapYear(2024));
 console.log(isLeapYear(2023));
+
+beforeSquares = [2, 3, 4, 5, 6, 7, 8, 9]
+
+afterSquares = []
+
+// for (i = 0; i < beforeSquares.length; i++){
+//   afterSquares.push(beforeSquares[i]*beforeSquares[i])
+// }
+// console.log(afterSquares)
+
+function squareofnumbers(value) {
+  value = value * value
+  console.log(value)
+  return value
+}
+
+afterSquares = beforeSquares.map(squareofnumbers)
+
+console.log(afterSquares)
+
+
