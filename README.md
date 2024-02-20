@@ -62,3 +62,5 @@ console.log(calculate(5,5,'*'))
 // arthametic 
 // logical 
 //comparison
+
+2)Even orr odd,palindrome ,amstrong (functions with exception handling)
