@@ -1,43 +1,43 @@
-// // function checkPalindrome(str) {
-// //     try {
-// //         str = str.toLowerCase();
+function checkPalindrome(str) {
+    try {
+        str = str.toLowerCase();
         
-// //         if (str.length <= 1) {
-// //             return "It is a palindome";
-// //         }
-// //                 if (str[0] === str[str.length - 1]) {
-// //             return checkPalindrome(str.slice(1, -1));
-// //         } else {
-// //             return "Not a palindrome";
-// //         }
-// //     } catch (error) {
-// //         console.error("Error occurred during palindrome checking:", error);
-// //         return "Error occured in  palindrome Checking";
-// //     }
-// // }
-// // console.log(checkPalindrome('Madam'));
-// // console.log(checkPalindrome('a'))
+        if (str.length <= 1) {
+            return "It is a palindrome";
+        }
+                if (str[0] === str[str.length - 1]) {
+            return checkPalindrome(str.slice(1, -1));
+        } else {
+            return "Not a palindrome";
+        }
+    } catch (error) {
+        console.error("Error occurred during palindrome checking:", error);
+        return "Error occurred in  palindrome Checking";
+    }
+}
+console.log(checkPalindrome('Madam'));
 
 
-// function isPalindrome(str) {
-//     let reversedStr = reverseString(str);
-//         if ( str === reversedStr){
-//             return "It is a Palindrome"
-//         }
-//         else {
-//             return "It is Not palindrome"
-//         }
-// }
-// function reverseString(str) {
-//     let reversedStr = '';
-//     for (let i = str.length - 1; i >= 0; i--) {
-//         reversedStr += str[i];
-//     }
-//     return reversedStr;
-// }
 
-// console.log(isPalindrome('madam'));
-// console.log(isPalindrome('hello')); 
+function isPalindrome(str) {
+    let reversedStr = reverseString(str);
+        if ( str === reversedStr){
+            return "It is a Palindrome"
+        }
+        else {
+            return "It is Not palindrome"
+        }
+}
+function reverseString(str) {
+    let reversedStr = '';
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversedStr += str[i];
+    }
+    return reversedStr;
+}
+
+console.log(isPalindrome('madam'));
+console.log(isPalindrome('hello')); 
 
 
 function oddOrEven(x) {
@@ -61,4 +61,5 @@ function oddOrEven(x) {
 
 result = oddOrEven(25);
 console.log(result); 
-
+result1 = oddOrEven(4);
+console.log(result1);
