@@ -61,3 +61,8 @@ console.log(calculate(5,5,'\*'))
 //comparison
 
 Even orr odd,palindrome ,armstrong (functions with exception handling)
+2)Even orr odd,palindrome ,armstrong (functions with exception handling)
+
+22/02/2024
+
+1)password (Cc8/):good password

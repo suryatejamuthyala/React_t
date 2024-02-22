@@ -18,7 +18,6 @@ function checkPalindrome(str) {
 console.log(checkPalindrome('Madam'));
 
 
-
 function isPalindrome(str) {
     let reversedStr = reverseString(str);
         if ( str === reversedStr){
@@ -36,30 +35,30 @@ function reverseString(str) {
     return reversedStr;
 }
 
-console.log(isPalindrome('madam'));
-console.log(isPalindrome('hello')); 
+console.log(isPalindrome('Madam'));
+console.log(isPalindrome('madam')); 
+console.log(isPalindrome("MADAM"))
 
 
-function oddOrEven(x) {
-    try {
-        if (!Number.isInteger(x)) {
-            throw new Error("Not an integer!");
-        }
+// function oddOrEven(x) {
+//     try {
+//         if (!Number.isInteger(x)) {
+//             throw new Error("Not an integer!");
+//         }
   
-        if (x % 2 === 0) {
-            return "The number is even";
-        } else {
-            return "The number is odd";
-        }
+//         if (x % 2 === 0) {
+//             return "The number is even";
+//         } else {
+//             return "The number is odd";
+//         }
   
-    } catch (error) {
-        return error.message;
-    } finally {
-        console.log("This function is to check odd or even.");
-    }
-}
+//     } catch (error) {
+//         return error.message;
+//     } finally {
+//         console.log("This function is to check odd or even.");
+//     }
+// }
 
-result = oddOrEven(25);
-console.log(result); 
-result1 = oddOrEven(4);
-console.log(result1);
+// result = oddOrEven(25);
+// console.log(result); 
+
