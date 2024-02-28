@@ -68,8 +68,8 @@ Even orr odd,palindrome ,armstrong (functions with exception handling)
 1)password (Cc8/):good password
 
 27/02/2023
- 
-1)Write a age calucator using html,css should display the age using calender 
-2)Write a registration and login page with validations using html ,css 
-3)Write  a example of click event
+
+1)Write a age calculator using html,css should display the age using calender
+2)Write a registration and login page with validations using html ,css
+3)Write a example of click event
 4)Create a react app for hello world
