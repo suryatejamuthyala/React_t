@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Login from './registrationform/Login';
+import login from './registrationform/Login';
+import Register from './registrationform/Register';
 
 const HelloComponent = () => {
-  return (
-    <div>
-      <h1>Hello, React!</h1>
-      <p>This is a basic React component.</p>
-    </div>
-  );
+    const [currentForm, setCurrentForm] = useState('login')
+    const form = (formName) => {
+        setCurrentForm(formName)
+    }
+    return (<div className='App'>
+            {currentForm === login ? <Login onFormSwitch={form}/> : <Register onFormSwitch={form}/>}
+        </div>
+
+    );
 };
 
 export default HelloComponent;
