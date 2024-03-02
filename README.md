@@ -73,3 +73,8 @@ Even orr odd,palindrome ,armstrong (functions with exception handling)
 2)Write a registration and login page with validations using html ,css
 3)Write a example of click event
 4)Create a react app for hello world
+
+2/3/2024
+1)Can you create an reactapp which can take a state and country as input and display its weather
+    api_key = "db94dcb1d71acbecb74c1b2e8ba33d2e"
+    url = f"https://api.openweathermap.org/data/2.5/weather?q={state},{country}&APPID={api_key}"
