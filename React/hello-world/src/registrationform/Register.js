@@ -12,18 +12,26 @@ const Register = (props) => {
 
     return (<><div className='form-container'>
            <center><form onSubmit={handleSubmit} style={{position:'center',top:'50%'}} >
-                <label>Full name</label>
-                <input value={name} onChange={(e) => setName(e.target.value)}/>
-                <br></br>
-                <label htmlFor="email">email</label>
-                <input type='email' id='email' name='email' value={email} onChange={(e) => setEmail(e.target.value)}/>
-                <br></br>
-                <label htmlFor="password">password</label>
-                <input type='password' id='password' name='password' value={password}
+   
 
-                       onChange={(e) => setPassword(e.target.value)}/>
-                       <br></br>
-                <button type='submit'>Submit</button>
+                 <h2>Register Form</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="usrnm" onChange={(e) => setName(e.target.value)}/>
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Email" name="email" onChange={(e) => setEmail(e.target.value)}/>
+  </div>
+
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+                    <input class="input-field" type="password" placeholder="Password" name="psw" onChange={(e) => setPassword(e.target.value)}/>
+                        
+  </div>
+
+  <button type="submit" class="btn">Register</button>
             </form>
             <button onClick={() => props.onFormSwitch('login')}>Go Back</button></center> </div>
         </>
