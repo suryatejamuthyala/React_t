@@ -1,18 +1,26 @@
-import React, {useState} from 'react';
-import Login from './registrationform/Login';
-import login from './registrationform/Login';
-import Register from './registrationform/Register';
+import { useState, useEffect } from 'react'
 
-const HelloComponent = () => {
-    const [currentForm, setCurrentForm] = useState('login')
-    const form = (formName) => {
-        setCurrentForm(formName)
-    }
-    return (<div className='App'>
-            {currentForm === login ? <Login onFormSwitch={form}/> : <Register onFormSwitch={form}/>}
-        </div>
+function App() {
 
-    );
-};
+  const [color, setColor] = useState("white")
 
-export default HelloComponent;
+  const click = color => {
+    setColor(color)
+  }
+
+  useEffect(() => {
+    document.body.style.backgroundColor = color
+  }, [color])
+
+
+  return (
+    <div className="App">
+      <button onClick={() => click("red")}>Red</button>
+      <button onClick={() => click("green")}>Green</button>
+      <button onClick={() => click("blue")}>Blue</button>
+      <button onClick = {() => click("yellow")}>yellow</button>
+    </div>
+  )
+}
+
+export default App;
