@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import "./App.css"
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
 
 
   return (
-    <div className="App">
+    // eslint-disable-next-line react/style-prop-object
+    <div className={`App`}>
       <button onClick={() => click("red")}>Red</button>
       <button onClick={() => click("green")}>Green</button>
       <button onClick={() => click("blue")}>Blue</button>
